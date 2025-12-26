@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação 02 - Heresiologia</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #ffffff; color: #333; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h2 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 10px; }
+        .questao { margin-bottom: 30px; padding: 15px; border: 1px solid #eee; border-radius: 8px; }
+        .pergunta { font-weight: bold; margin-bottom: 10px; display: block; }
+        .opcoes label { display: block; margin-bottom: 8px; cursor: pointer; }
+        .resultado { display: none; padding: 20px; border-radius: 10px; text-align: center; margin-top: 20px; }
+        .nota-vermelha { color: #b30000; background-color: #ffe6e6; border: 2px solid #b30000; }
+        .nota-azul { color: #003366; background-color: #e6f2ff; border: 2px solid #003366; }
+        .btn-acao { background-color: #003366; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 20px; width: 100%; font-size: 1.1em; }
+        .reteste-info { margin-top: 15px; font-weight: bold; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Avaliação de Aprendizado: Heresiologia</h2>
+    <form id="quizForm">
+        
+        <div class="questao">
+            <span class="pergunta">1. No Novo Testamento, a quem o termo "heresia" foi aplicado no sentido de partido religioso ou seita?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q1" value="A"> A) Apenas aos gentios convertidos.</label>
+                <label><input type="radio" name="q1" value="B"> B) Aos saduceus (At 5:17), fariseus (At 15:5) e cristãos (At 24:5).</label>
+                <label><input type="radio" name="q1" value="C"> C) Exclusivamente aos discípulos de João Batista.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">2. O Gnosticismo ensinava que a matéria é má e a salvação vem através de um conhecimento secreto (gnosis)?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q2" value="Sim"> Sim</label>
+                <label><input type="radio" name="q2" value="Não"> Não</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">3. A afirmação "A CCB é criticada por defender que somente seus membros são salvos" é:</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q3" value="V"> Verdadeira</label>
+                <label><input type="radio" name="q3" value="F"> Falsa</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">4. Qual destas heresias nega que Jesus seja da mesma essência (consubstancial) que o Pai?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q4" value="A"> A) Docetismo.</label>
+                <label><input type="radio" name="q4" value="B"> B) Monofisismo.</label>
+                <label><input type="radio" name="q4" value="C"> C) Arianismo.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">5. As Testemunhas de Jeová afirmam a doutrina da Trindade e a personalidade do Espírito Santo?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q5" value="Sim"> Sim</label>
+                <label><input type="radio" name="q5" value="Não"> Não</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">6. Qual o significado bíblico da "Árvore de Natal" segundo a análise de Jeremias 10:2-4 apresentada?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q6" value="A"> A) Um símbolo cristão autorizado por Jesus.</label>
+                <label><input type="radio" name="q6" value="B"> B) Um ritual pagão de cortar e ornamentar árvores com prata e ouro.</label>
+                <label><input type="radio" name="q6" value="C"> C) Uma profecia sobre o nascimento em Belém.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">7. A Igreja Adventista do Sétimo Dia afirma que o "Juízo Investigativo" teve início em que ano?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q7" value="A"> A) 1844.</label>
+                <label><input type="radio" name="q7" value="B"> B) 1914.</label>
+                <label><input type="radio" name="q7" value="C"> C) 1517.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">8. O sincretismo religioso é a tentativa de misturar a fé bíblica com práticas pagãs ou supersticiosas. Deus aceita essa mistura?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q8" value="Não"> Não</label>
+                <label><input type="radio" name="q8" value="Sim"> Sim</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">9. De acordo com o texto, qual a única celebração memorial instituída por Jesus?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q9" value="A"> A) O Natal.</label>
+                <label><input type="radio" name="q9" value="B"> B) A Páscoa com ovos e coelhos.</label>
+                <label><input type="radio" name="q9" value="C"> C) A Ceia (Lc 22:19).</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">10. O cristão deve perguntar não apenas se algo é "permitido", mas se:</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q10" value="A"> A) É uma tradição antiga.</label>
+                <label><input type="radio" name="q10" value="B"> B) Isso glorifica a Cristo.</label>
+                <label><input type="radio" name="q10" value="C"> C) É aceito pela sociedade moderna.</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn-acao" onclick="corrigir()">FINALIZAR AVALIAÇÃO</button>
+    </form>
+
+    <div id="resultadoBox" class="resultado">
+        <h3 id="mensagemNota"></h3>
+        <p id="detalheReteste"></p>
+        <button id="btnAvancar" class="btn-acao" style="display:none;" onclick="window.location.href='3materia.html'">AVANÇAR PARA MATÉRIA 03</button>
+    </div>
+</div>
+
+<script>
+    function corrigir() {
+        const gabarito = {
+            q1: 'B', q2: 'Sim', q3: 'V', q4: 'C', q5: 'Não',
+            q6: 'B', q7: 'A', q8: 'Não', q9: 'C', q10: 'B'
+        };
+
+        let nota = 0;
+        const form = document.getElementById('quizForm');
+        
+        for (let q in gabarito) {
+            const campo = form[q];
+            if (campo && campo.value === gabarito[q]) {
+                nota++;
+            }
+        }
+
+        const box = document.getElementById('resultadoBox');
+        box.style.display = 'block';
+        window.scrollTo(0, document.body.scrollHeight);
+
+        if (nota >= 7) {
+            box.className = 'resultado nota-azul';
+            document.getElementById('mensagemNota').innerText = "APROVADO! Nota final: " + nota;
+            document.getElementById('detalheReteste').innerText = "Parabéns por sua dedicação à sã doutrina.";
+            document.getElementById('btnAvancar').style.display = 'block';
+            } else {
+            box.className = 'resultado nota-vermelha';
+            document.getElementById('mensagemNota').innerText = "REPROVADO. Nota: " + nota;
+            document.getElementById('retesteArea').innerHTML = `
+                <div style="border: 2px solid #b30000; padding: 15px; margin-top: 15px; background-color: #fff; color: #000; border-radius: 8px;">
+                    <p style="color: #b30000; font-weight: bold;">SISTEMA BLOQUEADO</p>
+                    <p>Média mínima 7.0 não atingida.</p>
+                    <p><strong>Para liberar novo reteste:</strong></p>
+                    <p>1. Taxa de R$ 20,00 via PIX:<br><b>escolateologicavance@gmail.com</b></p>
+                    <a href="https://wa.me/5566984666186?text=Comprovante de Reteste. Aluno: ${localStorage.getItem('nome_aluno') || 'Estudante'}" 
+                       target="_blank" style="background: #25d366; color: white; padding: 12px; display: block; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px 0; text-align: center;">
+                       ENVIAR COMPROVANTE (WHATSAPP)
+                    </a>
+                    <hr>
+                    <p>Digite o código de liberação recebido:</p>
+                    <input type="text" id="codigoLibera" placeholder="Código" style="width: 60%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    <button type="button" onclick="desbloquearTeste()" style="background: #003366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">LIBERAR TESTE</button>
+                </div>`;
+        }
+    }
+
+    function desbloquearTeste() {
+        const digitado = document.getElementById('codigoLibera').value.trim();
+        const senhaMestre = "AVANCE2025";
+
+        if (digitado === senhaMestre) {
+            alert("Sucesso! Teste Liberado.");
+            window.location.reload(true); 
+        } else {
+            alert("Código inválido. Verifique com o suporte.");
+        }
+    }
+</script>
+
+</body>
+</html>

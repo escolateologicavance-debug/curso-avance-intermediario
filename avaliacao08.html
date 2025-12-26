@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação 08 - Teologia Pastoral</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; background-color: #ffffff; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h2 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 10px; }
+        .questao { margin-bottom: 25px; padding: 15px; border: 1px solid #eee; border-radius: 8px; }
+        .pergunta { font-weight: bold; display: block; margin-bottom: 10px; }
+        .opcoes label { display: block; margin-bottom: 8px; cursor: pointer; }
+        .resultado { display: none; padding: 20px; border-radius: 10px; text-align: center; margin-top: 20px; }
+        .nota-vermelha { color: #b30000; background-color: #ffe6e6; border: 2px solid #b30000; }
+        .nota-azul { color: #003366; background-color: #e6f2ff; border: 2px solid #003366; }
+        .btn-acao { background-color: #003366; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Avaliação: Teologia Pastoral (Matéria 08)</h2>
+    <form id="quizForm">
+        
+        <div class="questao">
+            <span class="pergunta">1. O que caracteriza a "Acídia" no contexto do ativismo ministerial?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q1" value="A"> A) Um estado de fervor espiritual que leva ao crescimento numérico rápido.</label>
+                <label><input type="radio" name="q1" value="B"> B) Um estado de tédio e desânimo que pode levar a um ativismo frenético e vazio para fugir da realidade espiritual.</label>
+                <label><input type="radio" name="q1" value="C"> C) A habilidade técnica de gerir as finanças da igreja com eficiência pragmática.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">2. (V ou F) A Teologia Pastoral substitui a Teologia Sistemática, pois a prática é mais importante que a doutrina bíblica.</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q2" value="V"> Verdadeiro</label>
+                <label><input type="radio" name="q2" value="F"> Falso</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">3. Na "Função Tripartida" do pastor, qual papel está ligado ao cuidado, aconselhamento e intercessão (micropastoreio)?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q3" value="A"> A) Profeta.</label>
+                <label><input type="radio" name="q3" value="B"> B) Rei/Líder.</label>
+                <label><input type="radio" name="q3" value="C"> C) Sacerdote.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">4. (V ou F) A exegese cultural/antropológica é a capacidade do pastor de compreender o contexto e as necessidades humanas para aplicar a verdade de forma relevante.</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q4" value="V"> Verdadeiro</label>
+                <label><input type="radio" name="q4" value="F"> Falso</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">5. (V ou F) Na visão pentecostal, a disciplina eclesiástica deve ser evitada para não apagar o brilho dos dons espirituais.</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q5" value="V"> Verdadeiro</label>
+                <label><input type="radio" name="q5" value="F"> Falso</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">6. Qual o posicionamento da Teologia Pastoral em relação ao Clericalismo e ao Autoritarismo?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q6" value="A"> A) Ela os promove para garantir a ordem e a submissão total dos fiéis.</label>
+                <label><input type="radio" name="q6" value="B"> B) Ela os combate, promovendo em seu lugar a liderança serva e a comunhão.</label>
+                <label><input type="radio" name="q6" value="C"> C) Ela é indiferente, pois foca apenas na espiritualidade interior do pastor.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">7. Como o pastor deve responder ao desafio do "Pragmatismo e Mercado Religioso"?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q7" value="A"> A) Retornando à centralidade de Cristo e da Palavra, agindo como "vaso de barro".</label>
+                <label><input type="radio" name="q7" value="B"> B) Adotando técnicas de show e entretenimento para aumentar a audiência.</label>
+                <label><input type="radio" name="q7" value="C"> C) Focando exclusivamente em resultados numéricos e sucesso mundano.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">8. (V ou F) O aconselhamento pastoral difere da psicologia secular por ser fundamentado na Escritura e voltado à restauração espiritual.</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q8" value="V"> Verdadeiro</label>
+                <label><input type="radio" name="q8" value="F"> Falso</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">9. (V ou F) Segundo o texto, o pastor é um profissional comum que escolhe o ministério como uma carreira de mercado.</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q9" value="V"> Verdadeiro</label>
+                <label><input type="radio" name="q9" value="F"> Falso</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">10. Qual é o objetivo final da Teologia Pastoral apresentado no texto?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q10" value="A"> A) Aumentar a arrecadação financeira da igreja local.</label>
+                <label><input type="radio" name="q10" value="B"> B) Formar discípulos maduros e glorificar a Deus na vida prática.</label>
+                <label><input type="radio" name="q10" value="C"> C) Tornar o pastor uma celebridade reconhecida pela cultura secular.</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn-acao" onclick="corrigir()">FINALIZAR AVALIAÇÃO</button>
+    </form>
+
+    <div id="resultadoBox" class="resultado">
+        <h3 id="mensagemNota"></h3>
+        <div id="retesteArea"></div>
+        <button id="btnAvancar" class="btn-acao" style="display:none;" onclick="window.location.href='9materia.html'">AVANÇAR PARA MATÉRIA 09</button>
+    </div>
+</div>
+
+<script>
+    function corrigir() {
+        const gabarito = {
+            q1:'B', q2:'F', q3:'C', q4:'V', q5:'F',
+            q6:'B', q7:'A', q8:'V', q9:'F', q10:'B'
+        };
+        
+        let nota = 0;
+        const form = document.getElementById('quizForm');
+        
+        for(let i=1; i<=10; i++) {
+            const radioOptions = form['q'+i];
+            let respondeu = false;
+            for(let option of radioOptions) {
+                if(option.checked) {
+                    if(option.value === gabarito['q'+i]) nota++;
+                    respondeu = true;
+                }
+            }
+            if(!respondeu) { alert("Responda a questão " + i); return; }
+        }
+
+        const box = document.getElementById('resultadoBox');
+        box.style.display = 'block';
+        window.scrollTo(0, document.body.scrollHeight);
+
+        if (nota >= 7) {
+            box.className = 'resultado nota-azul';
+            document.getElementById('mensagemNota').innerText = "APROVADO! Nota: " + nota;
+            document.getElementById('btnAvancar').style.display = 'block';
+        } else {
+            box.className = 'resultado nota-vermelha';
+            document.getElementById('mensagemNota').innerText = "REPROVADO. Nota: " + nota;
+            document.getElementById('retesteArea').innerHTML = `
+                <div style="border: 2px solid #b30000; padding: 15px; margin-top: 15px; background-color: #fff; color: #000; border-radius: 8px;">
+                    <p style="color: #b30000; font-weight: bold;">SISTEMA BLOQUEADO</p>
+                    <p>Média mínima 7.0 não atingida.</p>
+                    <p><strong>Para liberar novo reteste:</strong></p>
+                    <p>1. Taxa de R$ 20,00 via PIX:<br><b>escolateologicavance@gmail.com</b></p>
+                    <a href="https://wa.me/5566984666186?text=Comprovante de Reteste (Matéria 08). Aluno: ${localStorage.getItem('nome_aluno') || 'Estudante'}" 
+                       target="_blank" style="background: #25d366; color: white; padding: 12px; display: block; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px 0; text-align: center;">
+                       ENVIAR COMPROVANTE (WHATSAPP)
+                    </a>
+                    <hr>
+                    <p>Digite o código de liberação recebido:</p>
+                    <input type="text" id="codigoLibera" placeholder="Código" style="width: 60%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    <button type="button" onclick="desbloquearTeste()" style="background: #003366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">LIBERAR TESTE</button>
+                </div>`;
+        }
+    }
+
+    function desbloquearTeste() {
+        const digitado = document.getElementById('codigoLibera').value.trim();
+        const senhaMestre = "AVANCE2025";
+
+        if (digitado === senhaMestre) {
+            alert("Sucesso! Teste Liberado.");
+            window.location.reload(true); 
+        } else {
+            alert("Código inválido. Verifique com o suporte.");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas-Vindas - Faculdade AVANCE</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #003366; 
+            color: white; 
+            margin: 0; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container { 
+            max-width: 600px; 
+            width: 100%; 
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 25px; 
+            border-radius: 15px; 
+            border: 1px solid rgba(255,255,255,0.1);
+            line-height: 1.6;
+        }
+        h2 { color: #fff; text-align: center; }
+        .destaque { color: #ffcc00; font-weight: bold; }
+        .grade { 
+            background: rgba(0,0,0,0.3); 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        .lista-materias { list-style: none; padding: 0; }
+        .lista-materias li { margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; }
+        
+        .btn-iniciar { 
+            display: block; 
+            width: 100%; 
+            background-color: #28a745; 
+            color: white; 
+            text-align: center; 
+            padding: 18px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 8px; 
+            margin-top: 25px;
+            font-size: 1.1em;
+        }
+        .btn-iniciar:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Página de Boas-Vindas</h2>
+        
+        <p>Olá, <span id="displayNome" class="destaque">Cursando</span>! Seja bem-vindo à próxima etapa da sua jornada na Faculdade Teológica AVANCE.</p>
+
+        <p><strong>Mensagem de Incentivo e Estatística:</strong><br>
+        "Você sabia que, em média, mais de 60% dos estudantes de cursos à distância abandonam o curso? E a estatística de desistência nos cursos presenciais no Brasil é alta, com mais da metade dos estudantes abandonando antes da formatura, segundo dados recentes (2019-2023), com uma taxa acumulada de cerca de 54,2% no presencial, A falta de persistência é o maior obstáculo para a Qualificação da pessoa.</p>
+        
+        <p>Não permita que distrações ou o desânimo interrompam o seu progresso metodológico. O conhecimento que você busca exige <strong>PERSEVERANÇA</strong>. Lembre-se: quem começa e não termina, desperdiça o tempo que já investiu. Seja parte da minoria que conclui e se <strong>QUALIFICA</strong>!"</p>
+
+        <p><strong>A Regra do Reteste (Instrução Prática):</strong><br>
+        "Para avançar, você precisará atingir a nota mínima 7 em cada avaliação.</p>
+        <ul>
+            <li>Se atingir a média: A próxima matéria será liberada imediatamente.</li>
+            <li>Se não atingir a média: Você terá a oportunidade de realizar um Reteste. Após o clique e a contribuição simbólica de R$20,00 para suporte da plataforma, o sistema será liberado com o carimbo de superação."</li>
+        </ul>
+
+        <div class="grade">
+            <strong>Grade Curricular do Curso Intermediário:</strong><br><br>
+            Conheça as matérias que você vai estudar!
+            <ul class="lista-materias">
+                <li>• Paracletologia (60h/aulas)</li>
+                <li>• Heresiologia (60h/aulas)</li>
+                <li>• Angelologia (60h/aulas)</li>
+                <li>• História da Igreja (60h/aulas)</li>
+                <li>• Introdução ao Novo Testamento (60h/aulas)</li>
+                <li>• Introdução ao Velho Testamento (60h/aulas)</li>
+                <li>• Cristologia (60h/aulas)</li>
+                <li>• Teologia Pastoral (60h/aulas)</li>
+                <li>• Antropologia Teológica (60h/aulas)</li>
+                <li>• Oratória cristã (60h/aulas)</li>
+            </ul>
+        </div>
+
+        <a href="materia01.html" class="btn-iniciar">[ CLIQUE AQUI PARA INICIAR A MATÉRIA 01 ]</a>
+    </div>
+
+    <script>
+        // Recupera o nome salvo no index.html
+        const nomeSalvo = localStorage.getItem('nome_aluno');
+        if (nomeSalvo) {
+            document.getElementById('displayNome').innerText = nomeSalvo;
+        }
+    </script>
+
+</body>
+</html>

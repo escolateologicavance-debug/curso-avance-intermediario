@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação 06 - AT</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; background-color: #ffffff; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h2 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 10px; }
+        .questao { margin-bottom: 25px; padding: 15px; border: 1px solid #eee; border-radius: 8px; }
+        .pergunta { font-weight: bold; display: block; margin-bottom: 10px; }
+        .opcoes label { display: block; margin-bottom: 8px; cursor: pointer; }
+        .resultado { display: none; padding: 20px; border-radius: 10px; text-align: center; margin-top: 20px; }
+        .nota-vermelha { color: #b30000; background-color: #ffe6e6; border: 2px solid #b30000; }
+        .nota-azul { color: #003366; background-color: #e6f2ff; border: 2px solid #003366; }
+        .btn-acao { background-color: #003366; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; font-size: 1.1em; }
+    </style>
+    <script src="funcoes-curso.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Avaliação: Introdução ao Antigo Testamento</h2>
+    <form id="quizForm">
+        
+        <div class="questao">
+            <span class="pergunta">1. O Cânon do Antigo Testamento foi consolidado principalmente em qual período?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q1" value="A"> A) Durante a escravidão no Egito.</label>
+                <label><input type="radio" name="q1" value="B"> B) No período pós-exílio babilônico (cerca de 500 a.C.).</label>
+                <label><input type="radio" name="q1" value="C"> C) Apenas após a Reforma Protestante.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">2. Qual o significado da palavra "Cânon" vinda do grego kanon?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q2" value="A"> A) Vara de medir ou norma de fé.</label>
+                <label><input type="radio" name="q2" value="B"> B) Conjunto de poesias heróicas.</label>
+                <label><input type="radio" name="q2" value="C"> C) Livros que devem ser lidos apenas por sacerdotes.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">3. A Bíblia Hebraica (Tanakh) possui quantos livros na contagem protestante?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q3" value="A"> A) 24 livros.</label>
+                <label><input type="radio" name="q3" value="B"> B) 39 livros.</label>
+                <label><input type="radio" name="q3" value="C"> C) 66 livros.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">4. Quem foi o patriarca chamado por Deus para Canaã, iniciando a aliança?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q4" value="A"> A) Isaque.</label>
+                <label><input type="radio" name="q4" value="B"> B) Jacó.</label>
+                <label><input type="radio" name="q4" value="C"> C) Abraão.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">5. O que caracterizou o Reino do Norte (Israel) em 722 a.C.?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q5" value="A"> A) A conquista pelos Assírios.</label>
+                <label><input type="radio" name="q5" value="B"> B) A construção do Segundo Templo.</label>
+                <label><input type="radio" name="q5" value="C"> C) A libertação do cativeiro egípcio.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">6. Nabucodonosor II foi o responsável por qual evento em 586 a.C.?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q6" value="A"> A) A morte de Saul.</label>
+                <label><input type="radio" name="q6" value="B"> B) A destruição de Jerusalém e do Templo.</label>
+                <label><input type="radio" name="q6" value="C"> C) A unificação das Doze Tribos.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">7. Qual gênero literário foca em mensagens de exortação e restauração?</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q7" value="A"> A) Histórico.</label>
+                <label><input type="radio" name="q7" value="B"> B) Profético.</label>
+                <label><input type="radio" name="q7" value="C"> C) Sapiencial.</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">8. (V ou F) O Exílio Babilônico forçou os judeus a se concentrarem na fé sem um Templo físico, fortalecendo a Torá e a sinagoga.</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q8" value="V"> Verdadeiro</label>
+                <label><input type="radio" name="q8" value="F"> Falso</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">9. (V ou F) A tipologia bíblica ensina que figuras como Moisés e Davi são "sombras" que apontam para Jesus como o verdadeiro libertador.</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q9" value="V"> Verdadeiro</label>
+                <label><input type="radio" name="q9" value="F"> Falso</label>
+            </div>
+        </div>
+
+        <div class="questao">
+            <span class="pergunta">10. (V ou F) O Novo Testamento anula o Antigo Testamento, pois apresentam planos de salvação contraditórios.</span>
+            <div class="opcoes">
+                <label><input type="radio" name="q10" value="V"> Verdadeiro</label>
+                <label><input type="radio" name="q10" value="F"> Falso</label>
+            </div>
+        </div>
+
+        <button type="button" class="btn-acao" onclick="corrigir()">FINALIZAR AVALIAÇÃO</button>
+    </form>
+
+    <div id="resultadoBox" class="resultado">
+        <h3 id="mensagemNota"></h3>
+        <div id="retesteArea"></div>
+        <button id="btnAvancar" class="btn-acao" style="display:none;" onclick="window.location.href='7materia.html'">AVANÇAR PARA MATÉRIA 07</button>
+    </div>
+</div>
+
+<script>
+    function corrigir() {
+        const gabarito = {
+            q1:'B', q2:'A', q3:'B', q4:'C', q5:'A',
+            q6:'B', q7:'B', q8:'V', q9:'V', q10:'F'
+        };
+        
+        let nota = 0;
+        const form = document.getElementById('quizForm');
+        
+        for(let i=1; i<=10; i++) {
+            const resp = form['q'+i].value;
+            if(!resp) {
+                alert("Por favor, responda a questão " + i);
+                return;
+            }
+            if(resp === gabarito['q'+i]) nota++;
+        }
+
+        const box = document.getElementById('resultadoBox');
+        box.style.display = 'block';
+        window.scrollTo(0, document.body.scrollHeight);
+
+        if (nota >= 7) {
+            box.className = 'resultado nota-azul';
+            document.getElementById('mensagemNota').innerText = "APROVADO! Nota: " + nota;
+            document.getElementById('btnAvancar').style.display = 'block';
+            } else {
+            box.className = 'resultado nota-vermelha';
+            document.getElementById('mensagemNota').innerText = "REPROVADO. Nota: " + nota;
+            document.getElementById('retesteArea').innerHTML = `
+                <div style="border: 2px solid #b30000; padding: 15px; margin-top: 15px; background-color: #fff; color: #000; border-radius: 8px;">
+                    <p style="color: #b30000; font-weight: bold;">SISTEMA BLOQUEADO</p>
+                    <p>Média mínima 7.0 não atingida.</p>
+                    <p><strong>Para liberar novo reteste:</strong></p>
+                    <p>1. Taxa de R$ 20,00 via PIX:<br><b>escolateologicavance@gmail.com</b></p>
+                    <a href="https://wa.me/5566984666186?text=Comprovante de Reteste. Aluno: ${localStorage.getItem('nome_aluno') || 'Estudante'}" 
+                       target="_blank" style="background: #25d366; color: white; padding: 12px; display: block; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px 0; text-align: center;">
+                       ENVIAR COMPROVANTE (WHATSAPP)
+                    </a>
+                    <hr>
+                    <p>Digite o código de liberação recebido:</p>
+                    <input type="text" id="codigoLibera" placeholder="Código" style="width: 60%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    <button type="button" onclick="desbloquearTeste()" style="background: #003366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">LIBERAR TESTE</button>
+                </div>`;
+        }
+    }
+
+    function desbloquearTeste() {
+        const digitado = document.getElementById('codigoLibera').value.trim();
+        const senhaMestre = "AVANCE2025";
+
+        if (digitado === senhaMestre) {
+            alert("Sucesso! Teste Liberado.");
+            window.location.reload(true); 
+        } else {
+            alert("Código inválido. Verifique com o suporte.");
+        }
+    }
+</script>
+</body>
+</html>

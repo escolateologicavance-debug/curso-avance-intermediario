@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Intermediário - Faculdade AVANCE</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#003366">
+    <link rel="apple-touch-icon" href="logomarca-192.png">
+
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #003366; 
+            color: white; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh;
+        }
+        .capa-container { 
+            width: 90%; 
+            max-width: 400px; 
+            text-align: center; 
+        }
+        .logo-principal { width: 150px; margin-bottom: 20px; }
+        
+        .login-box { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 12px; 
+            color: black; 
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        input { 
+            display: block; width: 100%; margin: 12px 0; padding: 12px; 
+            border: 2px solid #003366; border-radius: 6px; box-sizing: border-box;
+            font-size: 16px;
+        }
+        
+        .btn-acesso { 
+            background-color: #003366; color: white; width: 100%; 
+            padding: 15px; border: none; border-radius: 6px; 
+            font-weight: bold; cursor: pointer; font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(() => console.log("Service Worker Registrado com Sucesso!"))
+      .catch(err => console.log("Falha ao registrar Service Worker:", err));
+  }
+</script>
+
+
+<div class="capa-container">
+    <img src="logomarca-512.png" alt="Faculdade AVANCE" class="logo-principal">
+    <h2 style="margin-bottom: 20px;">Curso Intermediário em Teologia</h2>
+
+    <div class="login-box">
+        <input type="text" id="nomeCursando" placeholder="Nome Completo">
+        <input type="password" id="senhaAcesso" placeholder="Senha de Acesso">
+        <button class="btn-acesso" onclick="iniciar()">Entrar no Curso</button>
+    </div>
+</div>
+
+<script>
+    function iniciar() {
+        const nome = document.getElementById('nomeCursando').value;
+        const senhaDigitada = document.getElementById('senhaAcesso').value;
+        const senhaCorreta = "AVANCE2025"; 
+
+        if (nome.length < 5) {
+            alert("Por favor, insira seu nome completo.");
+            return;
+        }
+
+        if (senhaDigitada === senhaCorreta) {
+            localStorage.setItem('nome_aluno', nome);
+            window.location.href = 'boas-vindas.html';
+        } else {
+            alert("Senha incorreta.");
+        }
+    }
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js').catch(() => {});
+        });
+    }
+</script>
+
+</body>
+</html>
