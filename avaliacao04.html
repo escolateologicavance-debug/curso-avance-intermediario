@@ -21,29 +21,41 @@ h2 {
     color: #003366;
     border-bottom: 2px solid #003366;
     padding-bottom: 10px;
+    margin-bottom: 25px;
 }
 .questao {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding: 15px;
     border: 1px solid #eee;
-    border-radius: 8px;
+    border-radius: 10px;
+    background: #fafafa;
 }
 .pergunta {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: block;
 }
 .opcoes label {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
     margin-bottom: 8px;
+    border-radius: 6px;
     cursor: pointer;
+}
+.opcoes label:hover {
+    background-color: #eef4ff;
+}
+.opcoes input[type="radio"] {
+    transform: scale(1.2);
 }
 .resultado {
     display: none;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .nota-vermelha {
     color: #b30000;
@@ -58,9 +70,9 @@ h2 {
 .btn-acao {
     background-color: #003366;
     color: white;
-    padding: 15px 30px;
+    padding: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
     margin-top: 20px;
@@ -77,80 +89,98 @@ h2 {
 
 <form id="quizForm">
 
-<!-- QUESTÕES -->
 <div class="questao">
 <span class="pergunta">1. O Cristianismo nasceu dentro de qual contexto religioso específico?</span>
+<div class="opcoes">
 <label><input type="radio" name="q1" value="A"> Paganismo Romano</label>
 <label><input type="radio" name="q1" value="B"> Judaísmo do Segundo Templo</label>
 <label><input type="radio" name="q1" value="C"> Filosofia Estoica Grega</label>
 </div>
+</div>
 
 <div class="questao">
 <span class="pergunta">2. Principal razão política das perseguições romanas?</span>
+<div class="opcoes">
 <label><input type="radio" name="q2" value="A"> Caridade pública</label>
 <label><input type="radio" name="q2" value="B"> Recusa ao culto imperial</label>
 <label><input type="radio" name="q2" value="C"> Uso do latim</label>
 </div>
+</div>
 
 <div class="questao">
 <span class="pergunta">3. Concílio que condenou o Arianismo?</span>
+<div class="opcoes">
 <label><input type="radio" name="q3" value="A"> Constantinopla</label>
 <label><input type="radio" name="q3" value="B"> Calcedônia</label>
 <label><input type="radio" name="q3" value="C"> Niceia</label>
 </div>
+</div>
 
 <div class="questao">
 <span class="pergunta">4. Cristo possui quantas naturezas?</span>
+<div class="opcoes">
 <label><input type="radio" name="q4" value="A"> Uma</label>
 <label><input type="radio" name="q4" value="B"> Duas</label>
 <label><input type="radio" name="q4" value="C"> Três</label>
 </div>
+</div>
 
 <div class="questao">
 <span class="pergunta">5. Marco inicial da Reforma Protestante?</span>
+<div class="opcoes">
 <label><input type="radio" name="q5" value="A"> Concílio de Trento</label>
 <label><input type="radio" name="q5" value="B"> 95 Teses</label>
 <label><input type="radio" name="q5" value="C"> Bíblia em latim</label>
 </div>
+</div>
 
 <div class="questao">
-<span class="pergunta">6. Sola Scriptura significa:</span>
+<span class="pergunta">6. O que significa Sola Scriptura?</span>
+<div class="opcoes">
 <label><input type="radio" name="q6" value="A"> Tradição</label>
 <label><input type="radio" name="q6" value="B"> Bíblia como única fonte</label>
 <label><input type="radio" name="q6" value="C"> Papa</label>
 </div>
+</div>
 
 <div class="questao">
-<span class="pergunta">7. Rua Azusa deu origem a qual movimento?</span>
+<span class="pergunta">7. O Avivamento da Rua Azusa originou qual movimento?</span>
+<div class="opcoes">
 <label><input type="radio" name="q7" value="A"> Escolástica</label>
 <label><input type="radio" name="q7" value="B"> Pentecostalismo</label>
 <label><input type="radio" name="q7" value="C"> Iluminismo</label>
 </div>
+</div>
 
 <div class="questao">
 <span class="pergunta">8. Missionários do pentecostalismo no Brasil?</span>
-<label><input type="radio" name="q8" value="A"> Berg e Vingren</label>
+<div class="opcoes">
+<label><input type="radio" name="q8" value="A"> Daniel Berg e Gunnar Vingren</label>
 <label><input type="radio" name="q8" value="B"> Seymour e Parham</label>
 <label><input type="radio" name="q8" value="C"> Lutero e Calvino</label>
+</div>
 </div>
 
 <div class="questao">
 <span class="pergunta">9. O relativismo desafia a verdade absoluta?</span>
+<div class="opcoes">
 <label><input type="radio" name="q9" value="V"> Verdadeiro</label>
 <label><input type="radio" name="q9" value="F"> Falso</label>
+</div>
 </div>
 
 <div class="questao">
 <span class="pergunta">10. Estudar História da Igreja serve para:</span>
-<label><input type="radio" name="q10" value="A"> Decorar datas</label>
-<label><input type="radio" name="q10" value="B"> Discernir o presente</label>
-<label><input type="radio" name="q10" value="C"> Invalidar a Bíblia</label>
+<div class="opcoes">
+<label><input type="radio" name="q10" value="A"> Apenas decorar datas</label>
+<label><input type="radio" name="q10" value="B"> Discernir o presente e evitar erros</label>
+<label><input type="radio" name="q10" value="C"> Invalidar as Escrituras</label>
+</div>
 </div>
 
 <button type="button" class="btn-acao" onclick="corrigir()">FINALIZAR AVALIAÇÃO</button>
 </form>
 
-<!-- RESULTADO -->
 <div id="resultadoBox" class="resultado">
 <h3 id="mensagemNota"></h3>
 <p id="detalheReteste"></p>
@@ -159,8 +189,6 @@ h2 {
 onclick="window.location.href='materia05.html'">
 AVANÇAR PARA MATÉRIA 05
 </button>
-
-<div id="retesteArea"></div>
 </div>
 
 </div>
@@ -176,9 +204,7 @@ function corrigir() {
     const form = document.getElementById('quizForm');
 
     for (let q in gabarito) {
-        if (form[q] && form[q].value === gabarito[q]) {
-            nota++;
-        }
+        if (form[q] && form[q].value === gabarito[q]) nota++;
     }
 
     const box = document.getElementById('resultadoBox');
@@ -187,21 +213,17 @@ function corrigir() {
 
     if (nota >= 7) {
         box.className = 'resultado nota-azul';
-        document.getElementById('mensagemNota').innerText = "APROVADO! Nota: " + nota;
-        document.getElementById('detalheReteste').innerText =
-        "Parabéns por compreender a História da Igreja.";
-        document.getElementById('btnAvancar').style.display = 'block';
-        document.getElementById('retesteArea').innerHTML = '';
+        mensagemNota.innerText = "APROVADO! Nota: " + nota;
+        detalheReteste.innerText =
+        "Parabéns por compreender a trajetória da Igreja de Cristo.";
+        btnAvancar.style.display = 'block';
     } else {
         box.className = 'resultado nota-vermelha';
-        document.getElementById('mensagemNota').innerText = "REPROVADO. Nota: " + nota;
-        document.getElementById('detalheReteste').innerText =
-        "Média mínima 7.0 não atingida.";
-        document.getElementById('retesteArea').innerHTML =
-        "<p>Sistema bloqueado. Procure a secretaria.</p>";
+        mensagemNota.innerText = "REPROVADO. Nota: " + nota;
+        detalheReteste.innerText = "Média mínima não atingida.";
     }
 }
 </script>
 
 </body>
-</html>
+    </html>
