@@ -1,220 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaliação 04 - História da Igreja</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #ffffff; color: #333; padding: 20px; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; }
-        h2 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 10px; }
-        .questao { margin-bottom: 30px; padding: 15px; border: 1px solid #eee; border-radius: 8px; }
-        .pergunta { font-weight: bold; margin-bottom: 10px; display: block; }
-        .opcoes label { display: block; margin-bottom: 8px; cursor: pointer; }
-        .resultado { display: none; padding: 20px; border-radius: 10px; text-align: center; margin-top: 20px; }
-        .nota-vermelha { color: #b30000; background-color: #ffe6e6; border: 2px solid #b30000; }
-        .nota-azul { color: #003366; background-color: #e6f2ff; border: 2px solid #003366; }
-        .btn-acao { background-color: #003366; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 20px; width: 100%; font-size: 1.1em; }
-        .reteste-info { margin-top: 15px; font-weight: bold; font-size: 1.2em; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avaliação 04 - História da Igreja</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h2 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+}
+.questao {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+.pergunta {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+.opcoes label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.resultado {
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.nota-vermelha {
+    color: #b30000;
+    background-color: #ffe6e6;
+    border: 2px solid #b30000;
+}
+.nota-azul {
+    color: #003366;
+    background-color: #e6f2ff;
+    border: 2px solid #003366;
+}
+.btn-acao {
+    background-color: #003366;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.1em;
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
-    <h2>Avaliação de Aprendizado: História da Igreja</h2>
-    <form id="quizForm">
-        
-        <div class="questao">
-            <span class="pergunta">1. O Cristianismo nasceu dentro de qual contexto religioso específico?</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q1" value="A"> A) Paganismo Romano.</label>
-                <label><input type="radio" name="q1" value="B"> B) Judaísmo do Segundo Templo.</label>
-                <label><input type="radio" name="q1" value="C"> C) Filosofia Estoica Grega.</label>
-            </div>
-        </div>
+<h2>Avaliação de Aprendizado: História da Igreja</h2>
 
-        <div class="questao">
-            <span class="pergunta">2. Qual foi a principal razão política para as perseguições romanas contra os cristãos?</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q2" value="A"> A) A prática da caridade pública.</label>
-                <label><input type="radio" name="q2" value="B"> B) A recusa em divinizar o imperador e cultuar os deuses romanos.</label>
-                <label><input type="radio" name="q2" value="C"> C) O uso do latim nas reuniões secretas.</label>
-            </div>
-        </div>
+<form id="quizForm">
 
-        <div class="questao">
-            <span class="pergunta">3. Qual concílio ecumênico afirmou que Cristo é "consubstancial ao Pai" (homoousios), condenando o Arianismo?</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q3" value="A"> A) Constantinopla (381).</label>
-                <label><input type="radio" name="q3" value="B"> B) Calcedônia (451).</label>
-                <label><input type="radio" name="q3" value="C"> C) Niceia (325).</label>
-            </div>
-        </div>
+<!-- QUESTÕES -->
+<div class="questao">
+<span class="pergunta">1. O Cristianismo nasceu dentro de qual contexto religioso específico?</span>
+<label><input type="radio" name="q1" value="A"> Paganismo Romano</label>
+<label><input type="radio" name="q1" value="B"> Judaísmo do Segundo Templo</label>
+<label><input type="radio" name="q1" value="C"> Filosofia Estoica Grega</label>
+</div>
 
-        <div class="questao">
-            <span class="pergunta">4. O Concílio de Calcedônia (451) definiu que Cristo é uma só pessoa em quantas naturezas?</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q4" value="A"> A) Apenas uma natureza divina.</label>
-                <label><input type="radio" name="q4" value="B"> B) Duas naturezas: plenamente Deus e plenamente homem.</label>
-                <label><input type="radio" name="q4" value="C) Três naturezas distintas.</label>
-            </div>
-        </div>
+<div class="questao">
+<span class="pergunta">2. Principal razão política das perseguições romanas?</span>
+<label><input type="radio" name="q2" value="A"> Caridade pública</label>
+<label><input type="radio" name="q2" value="B"> Recusa ao culto imperial</label>
+<label><input type="radio" name="q2" value="C"> Uso do latim</label>
+</div>
 
-        <div class="questao">
-            <span class="pergunta">5. Qual foi o evento que marcou o início da Reforma Protestante em 1517?</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q5" value="A"> A) O Concílio de Trento.</label>
-                <label><input type="radio" name="q5" value="B"> B) A fixação das 95 Teses por Martinho Lutero.</label>
-                <label><input type="radio" name="q5" value="C"> C) A tradução da Bíblia para o latim.</label>
-            </div>
-        </div>
+<div class="questao">
+<span class="pergunta">3. Concílio que condenou o Arianismo?</span>
+<label><input type="radio" name="q3" value="A"> Constantinopla</label>
+<label><input type="radio" name="q3" value="B"> Calcedônia</label>
+<label><input type="radio" name="q3" value="C"> Niceia</label>
+</div>
 
-        <div class="questao">
-            <span class="pergunta">6. Dentre os "5 Solas" da Reforma, o que significa "Sola Scriptura"?</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q6" value="A"> A) Somente a tradição da igreja.</label>
-                <label><input type="radio" name="q6" value="B"> B) Somente a Bíblia como única fonte de fé.</label>
-                <label><input type="radio" name="q6" value="C"> C) Somente a autoridade do Papa.</label>
-            </div>
-        </div>
+<div class="questao">
+<span class="pergunta">4. Cristo possui quantas naturezas?</span>
+<label><input type="radio" name="q4" value="A"> Uma</label>
+<label><input type="radio" name="q4" value="B"> Duas</label>
+<label><input type="radio" name="q4" value="C"> Três</label>
+</div>
 
-        <div class="questao">
-            <span class="pergunta">7. O Avivamento da Rua Azusa (1906-1909) é considerado o berço de qual movimento moderno?</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q7" value="A"> A) Escolasticismo.</label>
-                <label><input type="radio" name="q7" value="B"> B) Pentecostalismo Moderno.</label>
-                <label><input type="radio" name="q7" value="C"> C) Iluminismo Religioso.</label>
-            </div>
-        </div>
+<div class="questao">
+<span class="pergunta">5. Marco inicial da Reforma Protestante?</span>
+<label><input type="radio" name="q5" value="A"> Concílio de Trento</label>
+<label><input type="radio" name="q5" value="B"> 95 Teses</label>
+<label><input type="radio" name="q5" value="C"> Bíblia em latim</label>
+</div>
 
-        <div class="questao">
-            <span class="pergunta">8. Quem foram os missionários suecos responsáveis pelo início do avivamento pentecostal no Brasil em 1910?</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q8" value="A"> A) Daniel Berg e Gunnar Vingren.</label>
-                <label><input type="radio" name="q8" value="B"> B) William Seymour e Charles Parham.</label>
-                <label><input type="radio" name="q8" value="C"> C) Martinho Lutero e João Calvino.</label>
-            </div>
-        </div>
+<div class="questao">
+<span class="pergunta">6. Sola Scriptura significa:</span>
+<label><input type="radio" name="q6" value="A"> Tradição</label>
+<label><input type="radio" name="q6" value="B"> Bíblia como única fonte</label>
+<label><input type="radio" name="q6" value="C"> Papa</label>
+</div>
 
-        <div class="questao">
-            <span class="pergunta">9. Na pós-modernidade, a Igreja enfrenta o desafio do "Relativismo", onde a verdade absoluta é questionada em favor do "sentir".</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q9" value="V"> Verdadeiro</label>
-                <label><input type="radio" name="q9" value="F"> Falso</label>
-            </div>
-        </div>
+<div class="questao">
+<span class="pergunta">7. Rua Azusa deu origem a qual movimento?</span>
+<label><input type="radio" name="q7" value="A"> Escolástica</label>
+<label><input type="radio" name="q7" value="B"> Pentecostalismo</label>
+<label><input type="radio" name="q7" value="C"> Iluminismo</label>
+</div>
 
-        <div class="questao">
-            <span class="pergunta">10. Segundo a conclusão do curso, estudar a História da Igreja serve para:</span>
-            <div class="opcoes">
-                <label><input type="radio" name="q10" value="A"> A) Apenas decorar datas antigas.</label>
-                <label><input type="radio" name="q10" value="B"> B) Discernir o presente e evitar repetir erros do passado.</label>
-                <label><input type="radio" name="q10" value="C"> C) Invalidar as Escrituras Sagradas.</label>
-            </div>
-        </div>
+<div class="questao">
+<span class="pergunta">8. Missionários do pentecostalismo no Brasil?</span>
+<label><input type="radio" name="q8" value="A"> Berg e Vingren</label>
+<label><input type="radio" name="q8" value="B"> Seymour e Parham</label>
+<label><input type="radio" name="q8" value="C"> Lutero e Calvino</label>
+</div>
 
-        <button type="button" class="btn-acao" onclick="corrigir()">FINALIZAR AVALIAÇÃO</button>
-    </form>
+<div class="questao">
+<span class="pergunta">9. O relativismo desafia a verdade absoluta?</span>
+<label><input type="radio" name="q9" value="V"> Verdadeiro</label>
+<label><input type="radio" name="q9" value="F"> Falso</label>
+</div>
 
-    <div id="resultadoBox" class="resultado">
-    <div id="resultadoBox" class="resultado">
-    <h3 id="mensagemNota"></h3>
-    <p id="detalheReteste"></p>
+<div class="questao">
+<span class="pergunta">10. Estudar História da Igreja serve para:</span>
+<label><input type="radio" name="q10" value="A"> Decorar datas</label>
+<label><input type="radio" name="q10" value="B"> Discernir o presente</label>
+<label><input type="radio" name="q10" value="C"> Invalidar a Bíblia</label>
+</div>
 
-    <button id="btnAvancar" class="btn-acao" style="display:none"
-    onclick="window.location.href='materia05.html'">
-        AVANÇAR PARA MATÉRIA 05
-    </button>
+<button type="button" class="btn-acao" onclick="corrigir()">FINALIZAR AVALIAÇÃO</button>
+</form>
 
-    <div id="retesteArea"></div>
-    </div>
+<!-- RESULTADO -->
+<div id="resultadoBox" class="resultado">
+<h3 id="mensagemNota"></h3>
+<p id="detalheReteste"></p>
+
+<button id="btnAvancar" class="btn-acao" style="display:none"
+onclick="window.location.href='materia05.html'">
+AVANÇAR PARA MATÉRIA 05
+</button>
+
+<div id="retesteArea"></div>
+</div>
+
+</div>
 
 <script>
-    function corrigir() {
-        const gabarito = {
-            q1: 'B', q2: 'B', q3: 'C', q4: 'B', q5: 'B',
-            q6: 'B', q7: 'B', q8: 'A', q9: 'V', q10: 'B'
-        };
+function corrigir() {
+    const gabarito = {
+        q1:'B', q2:'B', q3:'C', q4:'B', q5:'B',
+        q6:'B', q7:'B', q8:'A', q9:'V', q10:'B'
+    };
 
-        let nota = 0;
-        const form = document.getElementById('quizForm');
-        
-        for (let q in gabarito) {
-            const campo = form[q];
-            if (campo && (campo.value === gabarito[q])) {
-                nota++;
-            }
-        }
+    let nota = 0;
+    const form = document.getElementById('quizForm');
 
-        const box = document.getElementById('resultadoBox');
-        box.style.display = 'block';
-        window.scrollTo(0, document.body.scrollHeight);
-
-        if (nota >= 7) {
-            box.className = 'resultado nota-azul';
-            document.getElementById('mensagemNota').innerText = "APROVADO! Nota: " + nota;
-            document.getElementById('detalheReteste').innerText = "Parabéns por compreender a trajetória da Igreja de Cristo.";
-            document.getElementById('btnAvancar').style.display = 'block';
-            } else {
-            box.className = 'resultado nota-vermelha';
-            document.getElementById('mensagemNota').innerText = "REPROVADO. Nota: " + nota;
-            document.getElementById('retesteArea').innerHTML = `
-                <div style="border: 2px solid #b30000; padding: 15px; margin-top: 15px; background-color: #fff; color: #000; border-radius: 8px;">
-                    <p style="color: #b30000; font-weight: bold;">SISTEMA BLOQUEADO</p>
-                    <p>Média mínima 7.0 não atingida.</p>
-                    <p><strong>Para liberar novo reteste:</strong></p>
-                    <p>1. Taxa de R$ 20,00 via PIX:<br><b>escolateologicavance@gmail.com</b></p>
-                    <a href="https://wa.me/5566984666186?text=Comprovante de Reteste. Aluno: ${localStorage.getItem('nome_aluno') || 'Estudante'}" 
-                       target="_blank" style="background: #25d366; color: white; padding: 12px; display: block; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px 0; text-align: center;">
-                       ENVIAR COMPROVANTE (WHATSAPP)
-                    </a>
-                    <hr>
-                    <p>Digite o código de liberação recebido:</p>
-                    <input type="text" id="codigoLibera" placeholder="Código" style="width: 60%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
-                    <button type="button" onclick="desbloquearTeste()" style="background: #003366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">LIBERAR TESTE</button>
-                </div>`;
+    for (let q in gabarito) {
+        if (form[q] && form[q].value === gabarito[q]) {
+            nota++;
         }
     }
 
-    function desbloquearTeste() {
-        const digitado = document.getElementById('codigoLibera').value.trim();
-        const senhaMestre = "AVANCE2025";
+    const box = document.getElementById('resultadoBox');
+    box.style.display = 'block';
+    window.scrollTo(0, document.body.scrollHeight);
 
-        if (digitado === senhaMestre) {
-            alert("Sucesso! Teste Liberado.");
-            window.location.reload(true); 
-              } else {
-            box.className = 'resultado nota-vermelha';
-            document.getElementById('mensagemNota').innerText = "REPROVADO. Nota: " + nota;
-            document.getElementById('retesteArea').innerHTML = `
-                <div style="border: 2px solid #b30000; padding: 15px; margin-top: 15px; background-color: #fff; color: #000; border-radius: 8px;">
-                    <p style="color: #b30000; font-weight: bold;">SISTEMA BLOQUEADO</p>
-                    <p>Média mínima 7.0 não atingida.</p>
-                    <p><strong>Para liberar novo reteste:</strong></p>
-                    <p>1. Taxa de R$ 20,00 via PIX:<br><b>escolateologicavance@gmail.com</b></p>
-                    <a href="https://wa.me/5566984666186?text=Comprovante de Reteste. Aluno: ${localStorage.getItem('nome_aluno') || 'Estudante'}" 
-                       target="_blank" style="background: #25d366; color: white; padding: 12px; display: block; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 10px 0; text-align: center;">
-                       ENVIAR COMPROVANTE (WHATSAPP)
-                    </a>
-                    <hr>
-                    <p>Digite o código de liberação recebido:</p>
-                    <input type="text" id="codigoLibera" placeholder="Código" style="width: 60%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;">
-                    <button type="button" onclick="desbloquearTeste()" style="background: #003366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">LIBERAR TESTE</button>
-                </div>`;
-        }
+    if (nota >= 7) {
+        box.className = 'resultado nota-azul';
+        document.getElementById('mensagemNota').innerText = "APROVADO! Nota: " + nota;
+        document.getElementById('detalheReteste').innerText =
+        "Parabéns por compreender a História da Igreja.";
+        document.getElementById('btnAvancar').style.display = 'block';
+        document.getElementById('retesteArea').innerHTML = '';
+    } else {
+        box.className = 'resultado nota-vermelha';
+        document.getElementById('mensagemNota').innerText = "REPROVADO. Nota: " + nota;
+        document.getElementById('detalheReteste').innerText =
+        "Média mínima 7.0 não atingida.";
+        document.getElementById('retesteArea').innerHTML =
+        "<p>Sistema bloqueado. Procure a secretaria.</p>";
     }
-
-    function desbloquearTeste() {
-        const digitado = document.getElementById('codigoLibera').value.trim();
-        const senhaMestre = "AVANCE2025";
-
-        if (digitado === senhaMestre) {
-            alert("Sucesso! Teste Liberado.");
-            window.location.reload(true); 
-        } else {
-            alert("Código inválido. Verifique com o suporte.");
-        }
-    }
+}
 </script>
 
 </body>
