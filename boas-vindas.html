@@ -35,6 +35,8 @@
         }
         .lista-materias { list-style: none; padding: 0; }
         .lista-materias li { margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4px; }
+        .lista-materias a { color: white; text-decoration: none; display: block; width: 100%; }
+        .lista-materias a:hover { color: #ffcc00; }
         
         .btn-iniciar { 
             display: block; 
@@ -75,27 +77,43 @@
             <strong>Grade Curricular do Curso Intermediário:</strong><br><br>
             Conheça as matérias que você vai estudar!
             <ul class="lista-materias">
-                <li>• Paracletologia (60h/aulas)</li>
-                <li>• Heresiologia (60h/aulas)</li>
-                <li>• Angelologia (60h/aulas)</li>
-                <li>• História da Igreja (60h/aulas)</li>
-                <li>• Introdução ao Novo Testamento (60h/aulas)</li>
-                <li>• Introdução ao Velho Testamento (60h/aulas)</li>
-                <li>• Cristologia (60h/aulas)</li>
-                <li>• Teologia Pastoral (60h/aulas)</li>
-                <li>• Apologética Teológica (60h/aulas)</li>
-                <li>• Teontologia (60h/aulas)</li>
+                <li><a href="materia01.html">• Paracletologia (60h/aulas)</a></li>
+                <li><a href="materia02.html">• Heresiologia (60h/aulas)</a></li>
+                <li><a href="materia03.html">• Angelologia (60h/aulas)</a></li>
+                <li><a href="materia04.html">• História da Igreja (60h/aulas)</a></li>
+                <li><a href="materia05.html">• Introdução ao Novo Testamento (60h/aulas)</a></li>
+                <li><a href="materia06.html">• Introdução ao Velho Testamento (60h/aulas)</a></li>
+                <li><a href="materia07.html">• Cristologia (60h/aulas)</a></li>
+                <li><a href="materia08.html">• Teologia Pastoral (60h/aulas)</a></li>
+                <li><a href="materia09.html">• Apologética Teológica (60h/aulas)</a></li>
+                <li><a href="materia10.html">• Teontologia (60h/aulas)</a></li>
             </ul>
         </div>
 
-        <a href="materia01.html" class="btn-iniciar">[ CLIQUE AQUI PARA INICIAR A MATÉRIA 01 ]</a>
+        <a href="materia01.html" id="btnProxima" class="btn-iniciar">[ CLIQUE AQUI PARA INICIAR A MATÉRIA 01 ]</a>
     </div>
 
     <script>
-        // Recupera o nome salvo no index.html
         const nomeSalvo = localStorage.getItem('nome_aluno');
         if (nomeSalvo) {
             document.getElementById('displayNome').innerText = nomeSalvo;
+        }
+
+        const listaArquivos = [
+            "materia01.html", "materia02.html", "materia03.html", "materia04.html",
+            "materia05.html", "materia06.html", "materia07.html", "materia08.html",
+            "materia09.html", "materia10.html"
+        ];
+
+        let progresso = parseInt(localStorage.getItem('indice_materia_liberada')) || 0;
+        const btn = document.getElementById('btnProxima');
+
+        if (progresso < listaArquivos.length) {
+            btn.href = listaArquivos[progresso];
+            btn.innerText = "[ CLIQUE AQUI PARA INICIAR A MATÉRIA " + (progresso + 1).toString().padStart(2, '0') + " ]";
+        } else {
+            btn.innerText = "[ CURSO CONCLUÍDO ]";
+            btn.href = "#";
         }
     </script>
 
